@@ -2,6 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Temporal Scaling",
+  "description": "This dataset comprises behavioral and neuroimaging data from twenty participants who learned to produce and perceive three distinct temporal intervals through interleaved production and perception tasks. Participants either produced temporal intervals (short, medium, or long) or judged computer-generated intervals as correct or incorrect, receiving visual feedback for each trial. The study investigates the neural mechanisms underlying temporal interval learning and discrimination.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,46 +17,6 @@
       "orcid": "0000-0002-8393-8533"
     }
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds004200.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on004200",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004200",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1101/2020.12.11.421180",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "modalities": [
-    "beh",
-    "eeg"
-  ],
-  "resource_type_specific": "Neuroimaging Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".fdt",
-    ".json",
-    ".m",
-    ".md",
-    ".png",
-    ".set",
-    ".tsv"
-  ],
-  "description": "This dataset comprises behavioral and neuroimaging data from twenty participants who learned to produce and perceive three distinct temporal intervals through interleaved production and perception tasks. Participants either generated temporal intervals or judged computer-produced intervals as correct or incorrect, receiving visual feedback. The study investigates temporal scaling mechanisms and interval learning in human cognition.",
   "keywords": [
     {
       "term": "temporal perception"
@@ -70,20 +31,48 @@
       "term": "learning"
     },
     {
-      "term": "behavioral task"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "production task"
-    },
-    {
-      "term": "perception task"
-    },
-    {
-      "term": "interval learning"
+      "term": "feedback"
     }
   ],
-  "source_hash": "503e3767897c73ec0b4e9a119b3963098a24b77a75ff49b4fd5281ad48e206b2"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on004200",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004200",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2020.12.11.421180",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004200.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_specific": "Neuroimaging Dataset",
+  "modalities": [
+    "beh",
+    "eeg"
+  ],
+  "sizes": [
+    "7.7 GB (49 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".m",
+    ".md",
+    ".png",
+    ".set",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "c48e1a372981c825756d4f41ef3b6322ec3cde6c01d769b0febdfadfae1c5ed3"
 }
