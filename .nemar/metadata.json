@@ -2,7 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Temporal Scaling",
-  "description": "This dataset comprises behavioral and neuroimaging data from twenty participants who learned to produce and perceive three distinct temporal intervals through interleaved production and perception tasks. Participants either produced temporal intervals (short, medium, or long) or judged computer-generated intervals as correct or incorrect, receiving visual feedback for each trial. The study investigates the neural mechanisms underlying temporal interval learning and discrimination.",
+  "description": "This dataset comprises EEG recordings from twenty participants performing a temporal scaling task involving learning of three temporal intervals. Two interleaved subtasks were used: a Production task, in which participants reproduced a short, medium, or long interval, and a Perception task, in which participants judged whether a computer-generated interval matched the target duration. Visual feedback (correct/incorrect) was provided after each trial in both tasks, enabling investigation of neural correlates of temporal interval learning and evaluation.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,19 +19,21 @@
   },
   "keywords": [
     {
-      "term": "temporal perception"
+      "term": "EEG"
     },
     {
-      "term": "interval timing"
+      "term": "Time Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013998"
     },
     {
-      "term": "motor production"
-    },
-    {
-      "term": "learning"
+      "term": "temporal scaling"
     },
     {
       "term": "feedback"
+    },
+    {
+      "term": "interval timing"
     }
   ],
   "related_identifiers": [
@@ -41,19 +43,19 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004200",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1101/2020.12.11.421180",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.18112/openneuro.ds004200.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004200",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "Neuroimaging Dataset",
@@ -74,5 +76,6 @@
     ".tsv",
     ".yml"
   ],
+  "methods_description": "Twenty participants completed a temporal scaling paradigm with two randomly interleaved subtasks (Production and Perception) involving three temporal intervals (short, medium, long), receiving visual feedback (checkmark or x) after each response.",
   "source_hash": "c48e1a372981c825756d4f41ef3b6322ec3cde6c01d769b0febdfadfae1c5ed3"
 }
