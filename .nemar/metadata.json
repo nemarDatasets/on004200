@@ -2,7 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Temporal Scaling",
-  "description": "This dataset comprises EEG recordings from twenty participants performing a temporal scaling task involving learning of three temporal intervals. Two interleaved subtasks were used: a Production task, in which participants reproduced a short, medium, or long interval, and a Perception task, in which participants judged whether a computer-generated interval matched the target duration. Visual feedback (correct/incorrect) was provided after each trial in both tasks, enabling investigation of neural correlates of temporal interval learning and evaluation.",
+  "description": "EEG recordings from twenty participants who learned three temporal intervals (short, medium, long). Two randomly interleaved subtasks were used: a Production task, in which participants produced a target interval, and a Perception task, in which they judged whether a computer-generated interval was correct. Visual feedback (checkmark or x) followed both tasks. The dataset supports investigation of temporal scaling of human scalp-recorded potentials.",
+  "methods_description": "Participants learned three temporal intervals and performed interleaved Production and Perception subtasks. In Production, they produced a short, medium, or long interval. In Perception, they judged a computer-produced interval as correct or incorrect. Visual feedback was given after each trial.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -27,13 +28,13 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D013998"
     },
     {
+      "term": "interval timing"
+    },
+    {
       "term": "temporal scaling"
     },
     {
       "term": "feedback"
-    },
-    {
-      "term": "interval timing"
     }
   ],
   "related_identifiers": [
@@ -45,7 +46,7 @@
     {
       "identifier": "10.1101/2020.12.11.421180",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.18112/openneuro.ds004200.v1.0.1",
@@ -64,7 +65,7 @@
     "eeg"
   ],
   "sizes": [
-    "7.7 GB (49 files)"
+    "7.21 GB (49 files)"
   ],
   "formats": [
     ".fdt",
@@ -76,6 +77,5 @@
     ".tsv",
     ".yml"
   ],
-  "methods_description": "Twenty participants completed a temporal scaling paradigm with two randomly interleaved subtasks (Production and Perception) involving three temporal intervals (short, medium, long), receiving visual feedback (checkmark or x) after each response.",
   "source_hash": "c48e1a372981c825756d4f41ef3b6322ec3cde6c01d769b0febdfadfae1c5ed3"
 }
